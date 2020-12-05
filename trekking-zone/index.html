@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Trekking Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+
+</head>
+
+<body>
+
+  <main id="root"></main>
+
+
+  <div id="notifications">
+    <div id="successBox" class="alert alert-success" role="alert">{Success Message...}</div>
+    <div id="loadingBox" class="alert alert-info" role="alert">Loading...</div>
+    <div id="errorBox" class="alert alert-danger" role="alert">{Error Message...}</div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="/db.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/node_modules/handlebars/dist/handlebars.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
+  <script src="/node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+  <script src="/index.js"></script>
+</body>
+
+
+
+</html>
+

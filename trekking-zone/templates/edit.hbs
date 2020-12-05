@@ -1,0 +1,30 @@
+{{>navigation}}
+<form class="create-trek" action="/edit/{{campaign.id}}" method="POST">
+
+  <div class="form-label-group">
+    <input type="text" name="location" class="form-control" placeholder="Location" required="" autofocus="" value="{{campaign.location}}">
+    <label for="inputTrekName">Location</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" value="{{campaign.dateTime}}" name="dateTime" class="form-control" placeholder="Date" required="">
+    <label for="inputTrekDate">Date</label>
+  </div>
+
+  <div class="form-label-group">
+    <textarea type="text" name="description" class="form-control" placeholder="Description" required="">{{campaign.description}}</textarea>
+    <label for="inputTrekDescription">Description</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" value={{campaign.imageUrl}} name="imageUrl" class="form-control" placeholder="Image" required="" autofocus="">
+    <label for="inputTrekImage">Image</label>
+  </div>
+  <div style="display: none">
+    <input name="organizer" value="" />
+    <input name="likes" value="" />
+  </div>
+
+  <button class="btn btn-lg btn-dark btn-block" type="submit">Edit the trek</button>
+</form>
+{{>footer}}
